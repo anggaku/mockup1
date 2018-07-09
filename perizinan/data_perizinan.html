@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>OSS</title>
+    <!-- favicon -->
+    <link href="../assets/img/favicon.ico" rel="icon">
+    <!-- Font Awesome -->
+    <link href="../vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../css/dasar.css" rel="stylesheet">
+    <link href="../css/mystyle.css" rel="stylesheet">
+    <link href="../css/util.css" rel="stylesheet">
+    <!-- Loader -->
+    <link rel="stylesheet" href="../css/loader.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#header">
+                <img src="../assets/img/logo.png" width="120" height="30" class="d-inline-block align-top" alt="dpmptsp logo">
+            </a>
+            <button class="navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#sekilas">Sekilas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#pendaftaranizin">Pendaftaran Izin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#statusperizinan">Status Perizinan</a>
+                    </li>
+                    <li class="nav-item custom-nav-a p-r-10">
+                        <a class="nav-link btn btn-outline-secondary btn-sm" href="#"> Keluar
+                            <i class="fa fa-sign-out" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
+
+    <!-- Page Content -->
+    <div class="container">
+        <section class="syarat-perizinan p-t-50 m-b-80">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-12 box-red text-center text-middle m-b-30 effect1 p-t-20 p-b-20">
+                        <h3 class="text-bold text-white">Data Pendaftaran Perizinan Online</h3>
+                    </div>
+                </div>
+                <div class="row m-b-30">
+                    <div class="col-md-12">
+                        <span class="text-center p-l-10 p-r-10">
+                        <p><strong>Info!</strong> <br> Data pendaftaran perizinan Anda yang masih masuk dalam tahap verifikasi berkas lampiran akan ditampilkan di halaman ini.
+                        <br>
+                        Perizinan akan diproses pada saat semua berkas lampiran telah lengkap dan terverifikasi oleh petugas kami.
+                    </p>
+                    </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-responsive text-center">
+                            <div class="p-b-15 text-left">
+                                <a href="index.html/#daftar" class="btn btn-primary"><i class="fa fa-plus" aria-hidden="true"></i>  Tambah Data Perizinan</a>
+                            </div>
+                            <table class="table table-sm table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">No.</th>
+                                        <th scope="col">Nama Perusahaan</th>
+                                        <th scope="col">Nama Pemohon</th>
+                                        <th scope="col">Jenis Izin</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col">Keterangan</th>
+                                        <th scope="col" colspan="2" class="text-center">Tracking</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="text-left">PT. Pertamina</td>
+                                        <td class="text-left">Budi Santoso</td>
+                                        <td class="text-left">STR (Pertambangan)</td>
+                                        <td class="text-left">Menunggu verifikasi petugas</td>
+                                        <td class="text-left">Berkasi baru disubmit online</td>
+                                        <td class="text-center"><a href=""><i class="fa fa-eye" aria-hidden="true"></i>
+                                                        </a></td>
+                                        <td class="text-center"><a href=""><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                                                        </a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td class="text-left">PT. Maju Jaya</td>
+                                        <td class="text-left">Amir</td>
+                                        <td class="text-left">STR (Pertambangan)</td>
+                                        <td class="text-left">Sudah terverifikasi</td>
+                                        <td class="text-left">Berkas sudah diperiksa</td>
+                                        <td class="text-center"><a href=""><i class="fa fa-eye" aria-hidden="true"></i>
+                                                            </a></td>
+                                        <td class="text-center"><a href=""><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                                                            </a></td>
+                                    </tr>
+                                    <!-- Kalo Belom ada data perizinannya -->
+                                    <!-- <tr>
+                                                <td colspan="7" class="text-center">Belum Ada Data Perizinan</td>
+                                            </tr> -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <div class="row m-b-20">
+                <div class="col-md-3 text-white">
+                    <h6 class="p-b-10">Layanan OPO</h6>
+                    <ul class="list-unstyled fs-14">
+                        <li class="footer-a p-b-5">
+                            <a href="" class="text-grey">Pendaftaran Izin</a>
+                        </li>
+                        <li class="footer-a p-b-5">
+                            <a href="" class="text-grey">E - Tracking</a>
+                        </li>
+                        <li class="footer-a p-b-5">
+                            <a href="" class="text-grey">E - Warning</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 text-white">
+                    <h6 class="p-b-10">Informasi</h6>
+                    <ul class="list-unstyled fs-14">
+                        <li class="footer-a p-b-5">
+                            <a href="" class="text-grey">FAQ</a>
+                        </li>
+                        <li class="footer-a p-b-5">
+                            <a href="" class="text-grey">Pengaduan</a>
+                        </li>
+                        <li class="footer-a p-b-5">
+                            <a href="" class="text-grey">Website</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 text-white">
+                    <h6 class="p-b-10">Social Media</h6>
+                    <ul class="list-unstyled fs-14">
+                        <li class="footer-a p-b-5">
+                            <a href="" class="text-grey">Facebook</a>
+                        </li>
+                        <li class="footer-a p-b-5">
+                            <a href="" class="text-grey">Twitter</a>
+                        </li>
+                        <li class="footer-a p-b-5">
+                            <a href="" class="text-grey">Instagram</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 text-white">
+                    <h6 class="p-b-10">Kontak</h6>
+                    <ul class="list-unstyled fs-14">
+                        <li class="footer-a p-b-5">
+                            <a href="" class="text-grey">
+                                <i class="fa fa-phone" aria-hidden="true"></i> +62-541 743235</a>
+                        </li>
+                        <li class="footer-a p-b-5">
+                            <a href="" class="text-grey">
+                                <i class="fa fa-fax" aria-hidden="true"></i> +62-541 736446</a>
+                        </li>
+                        <li class="footer-a p-b-5">
+                            <a href="" class="text-grey">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i> iso.ptspbppmd@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="m-0 text-center text-white fs-14">Copyright 2018 &copy; DPMPTSP Provinsi Kalimantan Timur</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="../vendor/easing/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="../js/scrolling-nav.js"></script>
+    <!-- Loader -->
+    <script src="../vendor/modernizer/modernizr-2.6.2.min.js"></script>
+    <script src="../js/loader.js"></script>
+
+</body>
+
+</html>

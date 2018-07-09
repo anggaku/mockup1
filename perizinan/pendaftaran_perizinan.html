@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>OSS</title>
+    <!-- favicon -->
+    <link href="../assets/img/favicon.ico" rel="icon">
+    <!-- Font Awesome -->
+    <link href="../vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../css/dasar.css" rel="stylesheet">
+    <link href="../css/mystyle.css" rel="stylesheet">
+    <!-- <link href="../css/style.css" rel="stylesheet"> -->
+    <link href="../css/util.css" rel="stylesheet">
+    <!-- Loader -->
+    <link rel="stylesheet" href="../css/loader.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#header">
+                <img src="../assets/img/logo.png" width="120" height="30" class="d-inline-block align-top" alt="dpmptsp logo">
+            </a>
+            <button class="navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#sekilas">Sekilas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#pendaftaranizin">Pendaftaran Izin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#statusperizinan">Status Perizinan</a>
+                    </li>
+                    <li class="nav-item custom-nav-a p-r-10">
+                        <a class="nav-link btn btn-outline-secondary btn-sm" href="#"> Keluar
+                            <i class="fa fa-sign-out" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="container">
+        <!-- Formulir Pendaftaran Izin -->
+        <!-- Section data perizinan -->
+        <section class="syarat-perizinan p-t-50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 box-red text-center text-middle m-b-30 effect1 p-t-20 p-b-20">
+                        <h3 class="text-bold text-white">Formulir Pendaftaran Perizinan Online</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 title-perizinan">
+                        <h5 class="text-bold">Pendaftaran Perizinan SIPAT</h5>
+                        <span>Form Pendaftaran Perizinan SIPAT (Surat Izin Pengeboran Air Tanah). 
+                        <br> Isi kolom dibawah dengan seksama. Tanda (*) menandakan kolom wajib di-isi.</span>
+                    </div>
+                </div>
+                <div class="row m-b-100">
+                    <div class="col-md-12">
+                        <form id="msform">
+                            <!-- progressbar -->
+                            <ul id="progressbar">
+                                <li class="active">Data Perusahaan</li>
+                                <li>Data Pemohon</li>
+                                <li>Upload Lampiran</li>
+                                <li>Submit</li>
+                            </ul>
+                            <!-- fieldsets -->
+                            <fieldset>
+                                <h2 class="fs-title">Data Perusahaan</h2>
+                                <h3 class="fs-subtitle">Tuliskan data lengkap mengenai perusahaan Anda</h3>
+                                <input type="text" name="namaperusahaan" placeholder="Nama Perusahaan*" required />
+                                <input type="text" name="alamatperusahaan" placeholder="Alamat Lengkap Perusahaan*" required />
+                                <input type="text" name="phone" placeholder="Nomor Telepon Perusahaan*" required />
+                                <input type="email" name="email" placeholder="Email Perusahaan*" required/>
+                                <input type="button" name="next" class="next action-button" value="Next" />
+                            </fieldset>
+                            <fieldset>
+                                <h2 class="fs-title">Data Pemohon</h2>
+                                <h3 class="fs-subtitle">Tuliskan data lengkap Anda.</h3>
+                                <input type="text" name="namapemohon" placeholder="Nama Pemohon*" required/>
+                                <input type="text" name="alamatpemohon" placeholder="Alamat Lengkap Pemohon*" required />
+                                <input type="text" name="phone" placeholder="Nomor Telepon Pemohon*" required/>
+                                <select class="form-control" id="selectidentitas" required>
+                                                                <option>--Pilih--</option>
+                                                                <option>KTP</option>
+                                                                <option>SIM</option>
+                                                                <option>NPWP</option>
+                                                            </select>
+                                <input type="text" name="nomorkartuidentitas" placeholder="Nomor Kartu Identitas" required/>
+                                <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                                <input type="button" name="next" class="next action-button" value="Next" />
+                            </fieldset>
+                            <fieldset>
+                                <h2 class="fs-title">Upload Lampiran</h2>
+                                <h3 class="fs-subtitle">Upload Lampiran Anda</h3>
+                                <div style="float:left;">
+                                    <p>
+                                        Untuk mempermudah petugas kami dalam memproses perizinan Anda diharapkan mengikuti ketentuan berikut:</p>
+                                    <ol style="float:left;">
+                                        <li style="text-align: left">Upload file lampiran dengan format PDF.</li>
+                                        <li style="text-align: left">Nama/judul file yang akan di upload jelas.</li>
+                                        <li style=" text-align: left">Upload file satu per satu sesuai urutan yang ada.</li>
+                                        <li style="text-align: left">Maksimal ukuran file yang bisa diupload adalah 4MB per file.</li>
+                                    </ol>
+                                </div>
+
+                                <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                                <input type="button" name="next" class="next action-button" value="Next" />
+                            </fieldset>
+                            <fieldset>
+                                <h2 class=" fs-title ">Selesai</h2>
+                                <h3 class="fs-subtitle ">Berikan tanda centang kemudian tekan tombol submit.</h3>
+                                <div class="row">
+                                    <div class="form-check" style="float: left;">
+                                        <input type="checkbox" style="width: auto; cursor: pointer;" class="form-check-input" id="setujuCheck">
+                                        <label class="form-check-label" for="setujuCheck" style="cursor: pointer;">Data yang Saya berikan adalah benar dan tanpa rekayasa.</label>
+                                    </div>
+                                </div>
+                                <input type="button" name="next" class="next action-button" value="Submit" />
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.formulir pendaftaran perizinan -->
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <div class="row m-b-20">
+                <div class="col-md-3 text-white">
+                    <h6 class="p-b-10">Layanan OPO</h6>
+                    <ul class="list-unstyled fs-14">
+                        <li class="footer-a p-b-5">
+                            <a href="" class="text-grey">Pendaftaran Izin</a>
+                        </li>
+                        <li class="footer-a p-b-5">
+                            <a href="" class="text-grey">E - Tracking</a>
+                        </li>
+                        <li class="footer-a p-b-5">
+                            <a href="" class="text-grey">E - Warning</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 text-white">
+                    <h6 class="p-b-10">Informasi</h6>
+                    <ul class="list-unstyled fs-14">
+                        <li class="footer-a p-b-5">
+                            <a href="" class="text-grey">FAQ</a>
+                        </li>
+                        <li class="footer-a p-b-5">
+                            <a href="" class="text-grey">Pengaduan</a>
+                        </li>
+                        <li class="footer-a p-b-5">
+                            <a href="" class="text-grey">Website</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 text-white">
+                    <h6 class="p-b-10">Social Media</h6>
+                    <ul class="list-unstyled fs-14">
+                        <li class="footer-a p-b-5">
+                            <a href="" class="text-grey">Facebook</a>
+                        </li>
+                        <li class="footer-a p-b-5">
+                            <a href="" class="text-grey">Twitter</a>
+                        </li>
+                        <li class="footer-a p-b-5">
+                            <a href="" class="text-grey">Instagram</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 text-white">
+                    <h6 class="p-b-10">Kontak</h6>
+                    <ul class="list-unstyled fs-14">
+                        <li class="footer-a p-b-5">
+                            <a href="" class="text-grey">
+                                <i class="fa fa-phone" aria-hidden="true"></i> +62-541 743235</a>
+                        </li>
+                        <li class="footer-a p-b-5">
+                            <a href="" class="text-grey">
+                                <i class="fa fa-fax" aria-hidden="true"></i> +62-541 736446</a>
+                        </li>
+                        <li class="footer-a p-b-5">
+                            <a href="" class="text-grey">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i> iso.ptspbppmd@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="m-0 text-center text-white fs-14">Copyright 2018 &copy; DPMPTSP Provinsi Kalimantan Timur</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="../vendor/easing/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Formulier pendaftaran izin -->
+    <script src="../js/stepper.js "></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="../js/scrolling-nav.js"></script>
+    <!-- Loader -->
+    <script src="../vendor/modernizer/modernizr-2.6.2.min.js"></script>
+    <script src="../js/loader.js"></script>
+
+</body>
+
+</html>
