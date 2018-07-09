@@ -9,8 +9,7 @@
 		"chmod -R 755 https://calm-stream-85496.herokuapp.com/vendor/easing/jquery-easing/jquery.easing.min.js",
 		"chmod -R 755 https://calm-stream-85496.herokuapp.com/vendor/modernizer/modernizr-2.6.2.min.js",
 		"chmod -R 755 https://calm-stream-85496.herokuapp.com/vendor/bootstrap/js/bootstrap.bundle.min.js",
-		"chmod -R 755 https://calm-stream-85496.herokuapp.com/vendor/easing/jquery-easing/jquery.easing.min.js",
-		"chmod -R 755 https://calm-stream-85496.herokuapp.com/vendor/easing/jquery-easing/jquery.easing.min.js",
+		"chmod -R 755 https://calm-stream-85496.herokuapp.com/vendor/easing/jquery-easing/jquery.easing.min.js"
 		
     ]
  }
